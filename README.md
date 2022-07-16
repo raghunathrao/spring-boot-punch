@@ -24,7 +24,7 @@ To run the app:
     cd ../spring-boot-punch-resource-server
     mvn clean spring-boot:run
     
-You can check Prometheus metrics at `http://localhost:8888/actuator/prometheus` by logging with either above credentials.
+You can check Prometheus metrics at http://localhost:8888/actuator/prometheus by logging with either above credentials.
 
 ## Relevant Articles:
 
