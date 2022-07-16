@@ -2,12 +2,12 @@
 
 ### Relevant information:
 
-1. `spring-boot-punch-oauth-server` is a **Keycloak** Authorization Server wrapped as a Spring Boot application
+1. `spring-boot-punch-oauth-server` is a **Keycloak embedded** Authorization Server wrapped as a Spring Boot application
 2. There is one OAuth Client registered in the Authorization Server:
    1. Realm : punch-app
    2. Client Id: punch-client
    3. Redirect Uri: http://localhost:8888/
-3. `spring-boot-punch-resource-server` is a Spring Boot based RESTFul API, acting as a backend Application, integrated with Keycloak oAuth2, **Prometheus**,  **Micrometer**, **Spring cache**, **Swagger**
+3. `spring-boot-punch-resource-server` is a Spring Boot based RESTFul API, acting as a backend Application, integrated with **Keycloak OAuth2**, **Prometheus**,  **Micrometer**, **Spring cache**, **Swagger**
 
 4. There are two users registered in the Authorization Server:
    1. user1 / 123
