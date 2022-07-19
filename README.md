@@ -1,17 +1,30 @@
-## Spring Security OAuth - New Stack
+## Spring Boot App with Security and SRE - New Stack
 
 ### Relevant information:
 
-1. `spring-boot-punch-oauth-server` is a Keycloak Authorization Server wrapped as a Spring Boot application
+1. `spring-boot-punch-oauth-server` is a **Keycloak embedded** Authorization Server wrapped as a Spring Boot application
 2. There is one OAuth Client registered in the Authorization Server:
-   1. Client Id: punch-client
+   1. Realm : punch-app
+   2. Client Id: punch-client
    3. Redirect Uri: http://localhost:8888/
-3. `spring-boot-punch-resource-server` is a Spring Boot based RESTFul API, acting as a backend Application, integrated with Keycloak oAuth2, Prometheus,  Micrometer, spring cache, swagger api doc
+3. `spring-boot-punch-resource-server` is a Spring Boot based RESTFul API, acting as a backend Application, integrated with **Keycloak OAuth2**, **Prometheus**,  **Micrometer**, **Spring cache**, **Swagger**
 
 4. There are two users registered in the Authorization Server:
    1. user1 / 123
    2. user2 / pass
 5. The module uses the new OAuth stack with Java 11.
+
+## To run
+
+To run the app:
+
+    cd spring-boot-punch-oauth-server
+    mvn clean spring-boot:run
+    
+    cd ../spring-boot-punch-resource-server
+    mvn clean spring-boot:run
+    
+You can check Prometheus metrics at http://localhost:8888/actuator/prometheus by logging with either above credentials.
 
 ## Relevant Articles:
 
