@@ -543,7 +543,8 @@
     "alwaysDisplayInConsole": false,
     "clientAuthenticatorType": "client-secret",
     "redirectUris": [
-      "http://localhost:8888/*"
+      "http://localhost:8888/*",
+      "http://localhost:3001/*"
     ],
     "webOrigins": [
       "+"
@@ -1073,6 +1074,8 @@
     "strictTransportSecurity" : "max-age=31536000; includeSubDomains"
   },
   "smtpServer" : { },
+  "accountTheme": "custom",
+  "loginTheme": "custom",
   "eventsEnabled" : false,
   "eventsListeners" : [ "jboss-logging" ],
   "enabledEventTypes" : [ ],

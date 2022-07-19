@@ -20,7 +20,7 @@ public class DemoMetrics {
     public void getRandomMetricsData() {
         demoGauage.set(getRandomNumberInRange(0, 100));
         counter.increment();
-        System.out.println("counter "+counter+" guage "+demoGauage.get());
+      
     }
 
 

@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-//@EnablePrometheusMetrics
+// @EnablePrometheusMetrics
 public class SpringBootPunchApplication {
 
 	public static void main(String[] args) {
